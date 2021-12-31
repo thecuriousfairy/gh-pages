@@ -7,8 +7,8 @@
 <meta name="generator" content="Jekyll v4.2.0" />
 <meta property="og:title" content="My Own Markdown Cheatsheet" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="kramdown flavor of markdown why is it not showing up in my editor on the right? That makes me sad." />
-<meta property="og:description" content="kramdown flavor of markdown why is it not showing up in my editor on the right? That makes me sad." />
+<meta name="description" content="Introduction" />
+<meta property="og:description" content="Introduction" />
 <link rel="canonical" href="localhost:4000/thecuriousblog/2021/05/01/my-own-markdown-cheatsheet.html" />
 <meta property="og:url" content="localhost:4000/thecuriousblog/2021/05/01/my-own-markdown-cheatsheet.html" />
 <meta property="og:site_name" content="The Curious Blog" />
@@ -17,23 +17,23 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="My Own Markdown Cheatsheet" />
 <script type="application/ld+json">
-{"headline":"My Own Markdown Cheatsheet","description":"kramdown flavor of markdown why is it not showing up in my editor on the right? That makes me sad.","dateModified":"2021-05-01T21:14:31-06:00","datePublished":"2021-05-01T21:14:31-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"localhost:4000/thecuriousblog/2021/05/01/my-own-markdown-cheatsheet.html"},"url":"localhost:4000/thecuriousblog/2021/05/01/my-own-markdown-cheatsheet.html","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"My Own Markdown Cheatsheet","description":"Introduction","dateModified":"2021-05-01T21:14:31-06:00","datePublished":"2021-05-01T21:14:31-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"localhost:4000/thecuriousblog/2021/05/01/my-own-markdown-cheatsheet.html"},"url":"localhost:4000/thecuriousblog/2021/05/01/my-own-markdown-cheatsheet.html","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/thecuriousblog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="localhost:4000/thecuriousblog/feed.xml" title="The Curious Blog" /></head>
 <body><header class="site-header" role="banner">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/thecuriousblog/">The Curious Blog</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
+    <div class="wrapper"><a class="site-title" rel="author" href="/thecuriousblog/"></a><nav class="site-nav">
+            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+            <label for="nav-trigger">
           <span class="menu-icon">
             <svg viewBox="0 0 18 15" width="18px" height="15px">
               <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
             </svg>
           </span>
-        </label>
+            </label>
 
-        <div class="trigger"><a class="page-link" href="/thecuriousblog/about/">About</a></div>
-      </nav></div>
+            <div class="trigger"><a class="page-link" href="/thecuriousblog/about/">About</a></div>
+        </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -47,7 +47,159 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>kramdown flavor of markdown why is it not showing up in my editor on the right?  That makes me sad.</p>
+    <h1 id="introduction">Introduction</h1>
+
+<p>Jekyll uses kramdown as it’s markdown flavor of choice.  I have used markdown off
+and on for various projects at work, so it’s not completely foreign to me.  However,
+I am super forgetful and if I am going to use it for the foreseeable future I am
+going to need some type of cheatsheet.  This page is going to be that for me.  I
+know it will likely grow over time as I find new things I want to be able to do,
+but for now this is what I need or think I will want in the short time ahead.</p>
+
+<h1 id="cheatsheet">Cheatsheet</h1>
+
+<h3 id="headers">Headers</h3>
+
+<p>Notes: A header must be preceded by a blank line.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#       H1 Header
+##      H2 Header
+###     H3 Header
+####    H4 Header
+#####   H5 Header
+######  H6 Header
+</code></pre></div></div>
+
+<h3 id="code">Code</h3>
+
+<p>Notes: Code block works with any number of ~ as long as the second set has more
+than the first set.  Yes this means my original box has more than this so that
+it would actually show what’s going on.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~
+code goes here
+~~~
+~~~
+but this also works
+~~~~~
+</code></pre></div></div>
+
+<h3 id="paragraphs">Paragraphs</h3>
+
+<p>Notes: I can hit “enter” in the middle of a line of text in my editor, and it will
+not be a paragraph or line break.  An extra new line will create a paragraph.
+Two spaces at the end of a line will create a line break.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is not
+a new paragraph
+
+But this would be a new paragraph
+
+You can't see the spaces but  
+this would create a line break
+</code></pre></div></div>
+
+<p>This is not
+a new paragraph.</p>
+
+<p>But this would be a new paragraph</p>
+
+<p>You can’t see the spaces but<br />
+this would create a line break</p>
+
+<h3 id="lists">Lists</h3>
+
+<h4 id="ordered-lists">Ordered Lists</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Item 1
+2. Item 2
+   This will continue on the same line as Item 2
+3. Item 3
+4. Item 4
+</code></pre></div></div>
+<ol>
+  <li>Item 1</li>
+  <li>Item 2
+This will continue on the same line as Item 2 (but it’s on a new line)</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+</ol>
+
+<h4 id="unordered-lists">Unordered Lists</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* purple
+* orange
+* pink
+</code></pre></div></div>
+<ul>
+  <li>purple</li>
+  <li>orange</li>
+  <li>pink</li>
+</ul>
+
+<h3 id="tables">Tables</h3>
+
+<h4 id="simple-tables">Simple Tables</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| cell 1 | cell 2 | cell 3 |
+| row 2 cell 1 | cell2 | cell 3 |
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>cell4</td>
+      <td>cell5</td>
+      <td>cell6</td>
+    </tr>
+    <tr>
+      <td>cell1</td>
+      <td>cell2</td>
+      <td>cell3</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="table-with-headers">Table With Headers</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Header1 | Header2 | Header3 |
+|:--------|:-------:|--------:|
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Header1</th>
+      <th style="text-align: center">Header2</th>
+      <th style="text-align: right">Header3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+</table>
 
   </div><a class="u-url" href="/thecuriousblog/2021/05/01/my-own-markdown-cheatsheet.html" hidden></a>
 </article>
