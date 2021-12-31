@@ -1,0 +1,103 @@
+I"�<h1 id="updating-my-site">Updating My Site</h1>
+
+<h3 id="adding-pictures">Adding Pictures</h3>
+<p>Next step in my website adventure, make it more than just a simple boring site.
+I don’t know exactly what I want my site to look like at this point, but I know
+I want some more color and a logo. I don’t think I will go crazy overboard, but
+I also don’t want it to look like a site from the 90’s. There are plenty of 
+tutorials out there, I just need to find one (or two) to follow and get moving 
+with making this more interesting.</p>
+
+<p>For future readers my original site at this point looked like this:</p>
+
+<p><img src="../../../images/2021-05-17/OriginalSiteMay2021.png" alt="original site" /></p>
+
+<blockquote>
+  <p>Side Note:  Adding Pictures and Links to a Markdown Based Post</p>
+
+  <p>Links:
+<code class="language-plaintext highlighter-rouge">[link](http://kramdown.gettalong.org)</code></p>
+
+  <p>Pictures: 
+<code class="language-plaintext highlighter-rouge">![gras](img/image.jpg)</code>
+this path is the relative path to the image file after jekyll has “compiled”
+(what is the correct word for this?) the site into the _site folder.</p>
+</blockquote>
+
+<blockquote class="sideNote">
+  <p>Side Note:  How to Screen Snippet on a Mac</p>
+
+  <p>Hold down command + shift + 4, it creates a little crosshairs that can be
+clicked and dragged to take a snippet of the screen.</p>
+</blockquote>
+
+<p>It’s time to add in my logo. When I first decided to do this project I knew I 
+was going to want a logo and a fun name. I spent a couple of days brainstorming
+ideas and finally stuck with The Curious Fairy and The Curious Blog.  First and 
+foremost I am here to learn and share what I learn. Most of the time it will be 
+tech related like this, but as things go on, I’m not sure it will stay that way 
+I tend to look up all sorts of things, and I am sure some of them will end up 
+here.</p>
+
+<h3 id="adding-my-logo">Adding My Logo</h3>
+
+<p>This was simple and turned into something a bit more difficult as I tried to 
+troubleshoot my problem.  Adding in the image of my log was a quick google search
+away, and a small code snippet into a new main.scss file:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+# main.scss needs the front matter, but only main, I think
+---
+
+@import "minima";
+
+.site-title::before {
+	content: url("../relative/pathTo/image.png");
+	display: inline-block;
+	position: relative;
+	width: 37px;
+	top: 5px;
+}
+</code></pre></div></div>
+
+<p>This successfully added my logo, but left the title still there.</p>
+
+<p><img src="../../../images/2021-05-17/LogoWithName.png" alt="LogoWithName" /></p>
+
+<p>This was not what I wanted. I stared at the scss file a bit and new that my 
+image was being put before something with the class <code class="language-plaintext highlighter-rouge">site-title</code> now all I 
+had to do was figure out how jekyll and the minima theme assembled the html 
+so I could override it somehow.  I initially hit up my favorite search engine,
+I landed on another semi helpful stack overflow page which led me to the
+<a href="https://github.com/jekyll/minima">minima theme’s documentation</a>.  Why did
+I not think to start there? That would have been the obvious thing to do. 
+After reading through the very thorough readme, I realized I just needed to 
+find the right file in the theme’s structure and put it into my own project’s
+structure and change it. (I just read that again, and it’s clear as mud)</p>
+
+<p>Minima has a specific file structure that lives in a gem folder.  I needed to
+find the correct html file that held a tag with <code class="language-plaintext highlighter-rouge">class="site-title</code> so I could
+have it not hold the site title as I no longer needed it. After some time of 
+searching and learning how the html worked together, I found it! The site title
+lives in the header.html file, which in thinking about it, makes perfect sense.
+At this point I was able to update the line from</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a class="site-title" rel="author" href="/thecuriousblog/"&gt;The Curious Blog&lt;/a&gt;
+</code></pre></div></div>
+<p>to</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a class="site-title" rel="author" href="/thecuriousblog/"&gt;&lt;/a&gt;
+</code></pre></div></div>
+<p>which gave me the logo without the name.</p>
+
+<p><img src="../../../images/2021-05-17/LogoWithOutName.png" alt="LogoWithOutName" /></p>
+
+<p>Exactly what I wanted it to look like.  However, at this point I was no longer
+sure this was how it should be done.  Is inserting an image via scss that way
+I should go?  I went to all this trouble to override the file to get rid of 
+the name, should I just further override the file so the picture is there 
+natively?</p>
+
+<p>After reading and looking at numerous options, I can go either way.  I opted to
+leave it as a pseudo element using the <code class="language-plaintext highlighter-rouge">::before</code> and <code class="language-plaintext highlighter-rouge">content</code> tags in the css. 
+I may change my mind as I move forward with other changes to the site, but in the 
+mean time this satisfies my need.</p>
+:ET

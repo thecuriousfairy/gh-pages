@@ -1,0 +1,13 @@
+---
+# main.scss needs the front matter, but only main, I think
+---
+
+@import "minima";
+
+.site-title::before {
+	content: url("../images/SiteWideImages/TheCuriousFairy.png");
+	display: inline-block;
+	position: relative;
+	width: 37px;
+	top: 5px;
+}

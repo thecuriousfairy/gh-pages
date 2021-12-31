@@ -1,0 +1,154 @@
+I";<h1 id="introduction">Introduction</h1>
+
+<p>Jekyll uses kramdown as it’s markdown flavor of choice.  I have used markdown off
+and on for various projects at work, so it’s not completely foreign to me.  However,
+I am super forgetful and if I am going to use it for the foreseeable future I am
+going to need some type of cheatsheet.  This page is going to be that for me.  I
+know it will likely grow over time as I find new things I want to be able to do,
+but for now this is what I need or think I will want in the short time ahead.</p>
+
+<h1 id="cheatsheet">Cheatsheet</h1>
+
+<h3 id="headers">Headers</h3>
+
+<p>Notes: A header must be preceded by a blank line.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#       H1 Header
+##      H2 Header
+###     H3 Header
+####    H4 Header
+#####   H5 Header
+######  H6 Header
+</code></pre></div></div>
+
+<h3 id="code">Code</h3>
+
+<p>Notes: Code block works with any number of ~ as long as the second set has more
+than the first set.  Yes this means my original box has more than this so that
+it would actually show what’s going on.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~
+code goes here
+~~~
+~~~
+but this also works
+~~~~~
+</code></pre></div></div>
+
+<h3 id="paragraphs">Paragraphs</h3>
+
+<p>Notes: I can hit “enter” in the middle of a line of text in my editor, and it will
+not be a paragraph or line break.  An extra new line will create a paragraph.
+Two spaces at the end of a line will create a line break.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is not
+a new paragraph
+
+But this would be a new paragraph
+
+You can't see the spaces but  
+this would create a line break
+</code></pre></div></div>
+
+<p>This is not
+a new paragraph.</p>
+
+<p>But this would be a new paragraph</p>
+
+<p>You can’t see the spaces but<br />
+this would create a line break</p>
+
+<h3 id="lists">Lists</h3>
+
+<h4 id="ordered-lists">Ordered Lists</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Item 1
+2. Item 2
+   This will continue on the same line as Item 2
+3. Item 3
+4. Item 4
+</code></pre></div></div>
+<ol>
+  <li>Item 1</li>
+  <li>Item 2
+This will continue on the same line as Item 2 (but it’s on a new line)</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+</ol>
+
+<h4 id="unordered-lists">Unordered Lists</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* purple
+* orange
+* pink
+</code></pre></div></div>
+<ul>
+  <li>purple</li>
+  <li>orange</li>
+  <li>pink</li>
+</ul>
+
+<h3 id="tables">Tables</h3>
+
+<h4 id="simple-tables">Simple Tables</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| cell 1 | cell 2 | cell 3 |
+| row 2 cell 1 | cell2 | cell 3 |
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td>cell4</td>
+      <td>cell5</td>
+      <td>cell6</td>
+    </tr>
+    <tr>
+      <td>cell1</td>
+      <td>cell2</td>
+      <td>cell3</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="table-with-headers">Table With Headers</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Header1 | Header2 | Header3 |
+|:--------|:-------:|--------:|
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Header1</th>
+      <th style="text-align: center">Header2</th>
+      <th style="text-align: right">Header3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+</table>
+:ET
